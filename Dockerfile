@@ -1,6 +1,7 @@
 from node:14-alpine
 
 WORKDIR /app
+hola
 
 COPY package.json .
 
