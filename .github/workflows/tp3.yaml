@@ -81,6 +81,16 @@ jobs:
       - uses: actions/checkout@v2
       - uses: akhileshns/heroku-deploy@v3.12.12
         with:
-          heroku_api_key: "112fe7ff-3255-4e9e-805f-aef912979c24"
-          heroku_app_name: "tp-deploy-pre-grupo7" #Must be unique in Heroku
-          heroku_email: "cristian@crisrodalbagli.com"
+          heroku_api_key: ${{ secrets.HEROKU_APP_SECRET }}
+          heroku_app_name: ${{ secrets.HEROKU_PREPROD_APP }}
+          heroku_email: ${{ secrets.HEROKU_EMAIL }}
+  Prod:
+    runs-on: ubuntu-latest
+    depends-on: PreProd
+    steps:
+      - uses: actions/checkout@v2
+      - uses: akhileshns/heroku-deploy@v3.12.12
+        with:
+          heroku_api_key: ${{ secrets.HEROKU_APP_SECRET }}
+          heroku_app_name: ${{ secrets.HEROKU_PROD_APP }}
+          heroku_email: ${{ secrets.HEROKU_EMAIL }}
