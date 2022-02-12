@@ -13,6 +13,12 @@ jobs:
       - name: my-step
         run: echo "Hello World!"
   
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: build
+      run: echo "Bulding......"
+  
   
   prettier:
     runs-on: ubuntu-latest
