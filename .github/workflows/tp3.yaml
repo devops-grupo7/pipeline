@@ -17,7 +17,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: build
-      run: echo "Bulding......"
+        run: echo "Bulding......"
   
   
   prettier:
