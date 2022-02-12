@@ -11,5 +11,3 @@ app.get("/", (res, req) => {
 app.listen (80, () => {
     console.log("Server Listening on Port: 80")
 });
-
-
