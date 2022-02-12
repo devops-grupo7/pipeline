@@ -86,7 +86,7 @@ jobs:
           heroku_email: ${{ secrets.HEROKU_EMAIL }}
   Prod:
     runs-on: ubuntu-latest
-    depends-on: PreProd
+    needs: PreProd
     steps:
       - uses: actions/checkout@v2
       - uses: akhileshns/heroku-deploy@v3.12.12
