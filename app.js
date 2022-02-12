@@ -6,7 +6,7 @@ const port = process.env.PORT || 8080;
 
 app.use(express.json());
 
-app.get("/", (res, req) => {
+app.get("/", (req, res) => {
   res.send("Hola Three Points");
 });
 
