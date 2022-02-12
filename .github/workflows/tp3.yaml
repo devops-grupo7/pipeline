@@ -7,7 +7,7 @@ on:
     branches: [ master ]
 
 jobs:
- Install Dependencies:
+ install:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
@@ -16,7 +16,7 @@ jobs:
         node-version: '14'
     - run: npm install
   
-  Prettier:
+  prettier:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
