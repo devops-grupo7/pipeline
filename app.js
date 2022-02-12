@@ -8,6 +8,8 @@ app.get("/", (res, req) => {
   res.send("Hola Three Points");
 });
 
-app.listen(80, () => {
-  console.log("Server Listening on Port: 80");
+app.listen(8080, () => {
+  console.log("Server Listening on Port: 8080");
 });
+
+module.exports = app;
