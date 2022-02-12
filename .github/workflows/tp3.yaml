@@ -82,5 +82,5 @@ jobs:
       - uses: akhileshns/heroku-deploy@v3.12.12
         with:
           heroku_api_key: "112fe7ff-3255-4e9e-805f-aef912979c24"
-          heroku_app_name: "Ytp-deploy-pre-grupo7" #Must be unique in Heroku
+          heroku_app_name: "tp-deploy-pre-grupo7" #Must be unique in Heroku
           heroku_email: "cristian@crisrodalbagli.com"
