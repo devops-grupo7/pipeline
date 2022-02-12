@@ -7,11 +7,11 @@ on:
     branches: [ master ]
 
 jobs:
-  hola-mundo:
+  Start:
     runs-on: ubuntu-latest
     steps:
-      - name: my-step
-        run: echo "Hello World!" 
+      - name: Start Pipeline
+        run: echo "Pipeline Despliegue Preprod y Prod Grupo 7" 
   
   build:
     runs-on: ubuntu-latest
